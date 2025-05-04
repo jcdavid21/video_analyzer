@@ -16,7 +16,9 @@ Make sure you have Python and Node.js installed on your system.
 
 Install the following Python libraries:
 
+```bash
 pip install opencv-python-headless numpy scikit-learn pydub openai-whisper google-generativeai deep-translator deepface
+```
 
 These are required for:
 
