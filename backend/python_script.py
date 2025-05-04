@@ -20,7 +20,8 @@ os.environ["TF_CPP_MIN_LOG_LEVEL"] = "2"
 os.environ["GRPC_VERBOSITY"] = "NONE"
 
 # Set your Gemini API key
-genai.configure(api_key="AIzaSyDliYbJHopLp2GPRA8NS5eVwMRQGVu6SJY")
+api_key = os.getenv("OPENAI_API_KEY")
+genai.configure(api_key=api_key)
 
 
 def extract_audio_from_video(video_path, audio_output_path="audio.wav"):
